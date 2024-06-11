@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+    --Very-dark-grey: hsl(0, 0%, 17%);
+    --dark-gray:  hsl(0, 0%, 59%);
+}
+
+*{
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title{
+    color: #fff;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header{
+    background-image: url("./images/pattern-bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+#input::-webkit-outer-spin-button,
+#input::-webkit-inner-spin-button
+{
+    display: none;
+}
+.input-sec {
+    position: relative;
+    width: 90%
+}
+
+#input {
+    width: 85%;
+    padding: 10px 40px 10px 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.image {
+    position: absolute;
+    right: 100px; /* Position from the right edge */
+    top: 51%;
+    background-color: black;
+    padding: 1px;
+    border-radius: 5px;
+    transform: translateY(-50%);
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+}
+#info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    padding:10px;
+    width:100%;
+    position: absolute;
+    bottom: -60px;
+    border-radius: 20px;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#info div{
+    border-right: 1px solid black;
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+    padding: 7px;
+}
+
+#info h3,
+#info p{
+    text-align: center;
+}
+
+#map {
+    width: 100%;
+    height: 100em;
+    margin-top: 20px;
+    z-index: 0;
+}

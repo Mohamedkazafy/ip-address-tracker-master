@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 class="title">IP Address Tracker</h1>
+      <div class="input-sec">
+        <input type="text" placeholder="Search for any IP address or domain" id="input">
+        <button><img src="./images/icon-arrow.svg" alt="arraw" class="image" id="search-button"></button>
+      </div>
+    <div id="info">
+      <div>
+        <h3>IP Address</h3>
+        <p id="iP"></p>
+      </div>
+      <div>
+        <h3>Location</h3>
+        <p id="location"></p>
+      </div>
+      <div>
+        <h3>Timezone</h3>
+        <p id="timezone"></p>
+      </div>
+      <div>
+        <h3>UTC</h3>
+        <p id="UTC"></p>
+      </div>
+      <div>
+        <h3>ISP</h3>
+        <p id="ISP"></p>
+      </div>
+    </div>
+    </div>
+    <div id="map" style="height: 400px;"></div>
+  </div>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="script.js"></script>
+</body>
+
+</html>
